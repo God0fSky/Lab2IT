@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Навчання HTML та CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+      ul {
+        text-align: left;
+      }
+
+      .notification {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #ffc107;
+        padding: 10px 20px;
+        border: 1px solid #ff9800;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .float-image {
+        float: left;
+        margin: 0 15px 10px 0;
+        width: 350px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .text-with-float {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notification">Увага: Нові матеріали вже доступні!</div>
+
+    <table>
+      <tr>
+        <td colspan="2" class="header">
+          <h1>Навчання HTML та CSS</h1>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="nav-menu">
+          <nav>
+            <a href="index.html">Головна</a> | <a href="#">HTML</a> |
+            <a href="#">CSS</a> | <a href="#">Вправи</a> |
+            <a href="#">Ресурси</a> |
+            <a href="weather.html">Перехід до іншої сторінки</a>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td class="content" style="width: 70%">
+          <section>
+            <p>
+              Хімічна реакція <b><i>ортфосфорної</i></b> кислоти:
+              P<sub>2</sub>O<sub>5</sub> + 3H<sub>2</sub>O &rarr;
+              H<sub>3</sub>PO<sub>4</sub>
+            </p>
+            <h2>Прогноз погоди</h2>
+            <div class="text-with-float">
+              <img
+                src="https://rai.ua/wp-content/uploads/2024/09/pogzh.jpg"
+                alt="Зображення прогнозу погоди"
+                class="float-image"
+              />
+              <p>
+                Це зображення показує прогноз погоди на поточний тиждень. Тут
+                відображено температуру, опади та швидкість вітру для основних
+                міст України. Використання зображень допомагає створювати
+                наочний та привабливий веб-дизайн.
+              </p>
+              <p>
+                Текст може обтікати зображення зліва або справа, що є однією з
+                важливих можливостей CSS для створення красивих макетів сторінок
+                з текстом і медіа-елементами.
+              </p>
+              <p>
+                Це зображення показує прогноз погоди на поточний тиждень. Тут
+                відображено температуру, опади та швидкість вітру для основних
+                міст України. Використання зображень допомагає створювати
+                наочний та привабливий веб-дизайн.
+              </p>
+              <p>
+                Текст може обтікати зображення зліва або справа, що є однією з
+                важливих можливостей CSS для створення красивих макетів сторінок
+                з текстом і медіа-елементами.
+              </p>
+              <p>
+                Це зображення показує прогноз погоди на поточний тиждень. Тут
+                відображено температуру, опади та швидкість вітру для основних
+                міст України. Використання зображень допомагає створювати
+                наочний та привабливий веб-дизайн.
+              </p>
+              <p>
+                Текст може обтікати зображення зліва або справа, що є однією з
+                важливих можливостей CSS для створення красивих макетів сторінок
+                з текстом і медіа-елементами.
+              </p>
+            </div>
+            <table>
+              <tr>
+                <th>Місто</th>
+                <th>Температура</th>
+                <th>Опади</th>
+                <th>Вітер</th>
+              </tr>
+              <tr>
+                <td>Київ</td>
+                <td>+3°C</td>
+                <td>Без опадів</td>
+                <td>5 м/с</td>
+              </tr>
+              <tr>
+                <td>Львів</td>
+                <td>+2°C</td>
+                <td>Легкий дощ</td>
+                <td>4 м/с</td>
+              </tr>
+              <tr>
+                <td>Одеса</td>
+                <td>+5°C</td>
+                <td>Без опадів</td>
+                <td>6 м/с</td>
+              </tr>
+              <tr>
+                <td>Харків</td>
+                <td>+4°C</td>
+                <td>Туман</td>
+                <td>3 м/с</td>
+              </tr>
+            </table>
+
+            <h2>Пошук</h2>
+            <form action="#">
+              <label for="search">Пошук:</label>
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Введіть запит..."
+              />
+              <button type="submit">Пошук</button>
+            </form>
+          </section>
+        </td>
+        <td class="side-nav" style="width: 30%">
+          <h2>Корисні ресурси</h2>
+          <nav id="resources-list">
+            <ul>
+              <li><a href="#">MDN Web Docs (HTML)</a></li>
+              <li><a href="#">MDN Web Docs (CSS)</a></li>
+              <li><a href="#">CSS-Tricks</a></li>
+              <li><a href="#">W3Schools</a></li>
+            </ul>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="footer">
+          <footer>© 2024 Навчання HTML та CSS. Всі права захищені.</footer>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

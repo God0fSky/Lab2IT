@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Навчання HTML та CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+      ul {
+        text-align: left;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gray;
+        padding: 20px;
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+        margin: 5px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      input[type="radio"] {
+        margin-right: 8px;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="2" class="header">
+          <h1>Навчання HTML та CSS</h1>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="nav-menu">
+          <nav>
+            <a href="#">Головна</a> | <a href="#">HTML</a> |
+            <a href="#">CSS</a> | <a href="#">Вправи</a> |
+            <a href="#">Ресурси</a> |
+            <a href="weather.html">Перехід до іншої сторінки</a>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td class="content" style="width: 70%">
+          <section>
+            <h2 style="color: rgb(139, 7, 7)">Основи HTML</h2>
+            <article>
+              <h3>Що таке HTML?</h3>
+              <p>
+                HTML (HyperText Markup Language) — це стандартна мова розмітки
+                для створення веб-сторінок. Вона використовується для опису
+                структури сторінки за допомогою різних елементів, таких як
+                заголовки, абзаци, посилання та списки.
+              </p>
+              <p>
+                HTML є основою для створення веб-контенту, і для навчання
+                програмуванню в Інтернеті важливо зрозуміти його основи.
+              </p>
+            </article>
+            <h2>Основи CSS</h2>
+            <article>
+              <h3>Що таке CSS?</h3>
+              <p>
+                CSS (Cascading Style Sheets) — це мова стилів, що дозволяє
+                описувати зовнішній вигляд веб-сторінок. CSS дозволяє змінювати
+                кольори, шрифти, відступи та багато інших аспектів стилю
+                елементів на веб-сторінці.
+              </p>
+              <p>
+                У поєднанні з HTML, CSS дозволяє створювати привабливі та зручні
+                веб-сторінки.
+              </p>
+            </article>
+            <h2>Розподіл груп за спеціальностями</h2>
+            <ul>
+              <li>
+                Кафедра програмування
+                <ul>
+                  <li>СП (Спеціальність програмування)</li>
+                  <li>КСП (Комп'ютерні системи та програмування)</li>
+                </ul>
+              </li>
+              <li>
+                Кафедра комп'ютерних наук
+                <ul>
+                  <li>КН (Комп'ютерні науки)</li>
+                  <li>ІПЗ (Інформаційні програмні системи)</li>
+                </ul>
+              </li>
+              <li>
+                Кафедра комп'ютерної інженерії
+                <ul>
+                  <li>КІ (Комп'ютерна інженерія)</li>
+                </ul>
+              </li>
+            </ul>
+            <h2>Перемикачі з порядком за допомогою Flexbox</h2>
+            <div class="flex-container">
+              <label class="box green" style="order: 3">
+                <input type="radio" name="order" value="1" /> 1
+              </label>
+              <label class="box blue" style="order: 4">
+                <input type="radio" name="order" value="2" /> 2
+              </label>
+              <label class="box blue" style="order: 1">
+                <input type="radio" name="order" value="3" /> 3
+              </label>
+              <label class="box red" style="order: 2">
+                <input type="radio" name="order" value="4" /> 4
+              </label>
+            </div>
+          </section>
+        </td>
+        <td class="side-nav" style="width: 30%">
+          <h2>Корисні ресурси</h2>
+          <nav id="resources-list">
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/uk/docs/Web/HTML"
+                  target="_blank"
+                  >MDN Web Docs (HTML)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/uk/docs/Web/CSS"
+                  target="_blank"
+                  >MDN Web Docs (CSS)</a
+                >
+              </li>
+              <li>
+                <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/css/" target="_blank"
+                  >W3Schools</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="footer">
+          <footer>© 2024 Навчання HTML та CSS. Всі права захищені.</footer>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
